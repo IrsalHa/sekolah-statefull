@@ -1,4 +1,8 @@
 <?php 
+session_start();
+if(!$_SESSION['username']){
+  header("location:login.php?pesan=belum_login");
+}
 include '../config/database.php';
       if(isset($_GET['delete'])){
         $id = $_GET['delete'];

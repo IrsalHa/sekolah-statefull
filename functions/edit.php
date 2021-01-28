@@ -1,4 +1,8 @@
 <?php 
+session_start();
+if(!$_SESSION['username']){
+  header("location:login.php?pesan=belum_login");
+}
 error_reporting(E_ALL);
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
@@ -10,11 +14,11 @@ include '../config/database.php';
         $password = $_POST['password'];
         $foto = $_FILES['image']['name'];
         $target = "../img/".basename($foto);
-       if($foto == 0){
-        $result = mysqli_query($konek, "UPDATE user SET email='$email',password='$password',nama='$nama' WHERE id=$id");          }
-      else{
-        $result = mysqli_query($konek, "UPDATE user SET email='$email',password='$password',nama='$nama',foto='$target' WHERE id=$id");     
-      }
+    if($_FILES['image']['size']== 0 && $foto['image']['error']==0){
+              $result = mysqli_query($konek, "UPDATE user SET email='$email',password='$password',nama='$nama' WHERE id=$id");     
+    }else{
+      $result = mysqli_query($konek, "UPDATE user SET email='$email',password='$password',nama='$nama',foto='$target' WHERE id=$id");     
+    }
         if($result){
            $poto = move_uploaded_file($_FILES['image']['tmp_name'], $target);
           echo '<div class="alert alert-danger mt-4" role="alert">Data Sukses di update</div>';
