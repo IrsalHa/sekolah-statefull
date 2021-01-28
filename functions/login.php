@@ -15,6 +15,7 @@ if(isset($_POST['Submit'])){
     if($cek > 0){
         $_SESSION['username'] = $email;
         $_SESSION['nama'] = $data['nama'];
+        $_SESSION['foto'] = $data['foto'];
 	    $_SESSION['password'] = $password;  
        // echo "sukses";
         header('Location: ../index.php');

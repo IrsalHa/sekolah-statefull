@@ -259,7 +259,7 @@ $siswa = mysqli_query($konek,"select * from user where id=$id");
                           </li>  
                           <li class="caption-content">
                              <a href="#" class="iq-user-toggle d-flex align-items-center justify-content-between" id="h-dropdownMenuButton001" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  <img src="../assets/images/user/1.jpg" class="img-fluid rounded avatar-50" alt="user">
+                                  <img src="<?= $_SESSION['foto'] ?>" class="img-fluid rounded avatar-50" alt="user">
                               </a>
                               <div class="dropdown-menu dropdown-menu-right w-100 border-0 py-2" aria-labelledby="h-dropdownMenuButton001">
                                   <a class="dropdown-item mb-2" href="">
