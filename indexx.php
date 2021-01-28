@@ -568,7 +568,7 @@
                   <div class="caption">
                       <h6 class="mb-0 line-height">Bud Wiser</h6>
                   </div>
-                  <i class="las la-angle-down"></i>
+                  <span class="material-icons">expand_more</span>
               </a>
               <div class="dropdown-menu w-100 border-0 my-2" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item mb-2" href="https://iqonic.design/themes/note-plus/html/app/user-profile.html">
@@ -626,7 +626,7 @@
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                                       </svg>
                                   </i>
-                                  <span>Your Notes</span>
+                                  <span>Dashboard</span>
                               </a>
                           <ul id="index" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                           </ul>
@@ -812,10 +812,10 @@
                         <table id="tree-table-9" class="table tree mb-0 tbl-server-info">
                            <thead class="bg-white text-uppercase">
                               <tr class="ligth">
-                                 <th>Title</th>
-                                 <th>Created By</th>
-                                 <th>Updated</th>
-                                 <th>Shared With</th>
+                                 <th>No</th>
+                                 <th>Email</th>
+                                 <th>Name</th>
+                                 <th>Image</th>
                                  <th>Action</th>
                               </tr>
                            </thead>
@@ -831,7 +831,6 @@
                                     <div>
                                         <a href="#" class="badge badge-white mr-3 edit-note" data-toggle="modal" data-target="#edit-note"><span style="color: black;" class="material-icons">edit</span></a>
                                         <a href="#" class="badge badge-white mr-3 edit-note" data-toggle="modal" data-target="#edit-note"><span style="color: black;" class="material-icons">delete_forever</span></a>
-                                        
                                     </div>
                                  </td>
                               </tr>
